@@ -1,0 +1,82 @@
+h1{color:green}
+p{color:blue}
+.header a{
+    text-decoration: none;
+}
+.header a:link { text-decoration: none;color: #c5d2d2}
+.header a:active { text-decoration:blink}
+.header a:hover { text-decoration:none;color: #6ba935}
+ #view{
+     background-color: #065d5e;
+     width: 100%;
+     height: 500px;
+     overflow: hidden;
+ }
+ .header{
+     position: relative;
+     margin: 0 auto;
+ }
+ .header_wrap{
+     width: 1000px;
+     margin: 20px auto 0 auto;
+     //padding: 20px 0 0 0;
+ }
+ .intro{
+     position: relative;
+     margin: 0 auto;
+     width: 1000px;
+ }
+ .logo{
+     float: left;
+ }
+ .nav{
+     float: right;
+ }
+ .float-left{
+     float: left;
+ }
+ .float-right{
+     float: right;
+ }
+.nav ul{
+    margin: 0 0 20px 0;
+
+}
+ .nav li{
+     float: left;
+     margin-left: 35px;
+     margin-top: 10px;
+     height: 50px;
+     color: #c5d2d2;
+ }
+ .original-btn{
+     color: #c5d2d2;
+     font-size: 14px;
+ }
+ .register-btn{
+     border: 1px solid #6ba935;
+     border-radius: 5px;
+     color: #6ba935;
+     padding:5px 30px;
+     font-size: 14px;
+ }
+ .intro{
+     width: 1000px;
+     margin: 0 auto;
+ }
+ .intro_content{
+     float: left;
+     margin-top: 100px;
+     margin-left: 40px;
+ }
+ .title{
+     font-size: 46px;
+     color: #c5d2d2;
+ }
+ .des{
+     font-size: 22px;
+     color: #c5d2d2;
+ }
+ .intro_image{
+     float: right;
+ }

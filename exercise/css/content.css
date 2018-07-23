@@ -1,0 +1,139 @@
+#content{
+    background-color: #f2f2f2;
+    width: 100%;
+    padding-top: 40px;
+}
+.content_nav{
+    width: 1000px;
+    margin: 0 auto;
+}
+.nav-item-unique{
+    float: left;
+    height: 20px;
+    color: #faeacf;
+    border-radius: 15px;
+    padding: 3px 15px;
+    background: #fba819;
+    font-size: 14px;
+    line-height: 20px;
+    margin-left: 15px;
+}
+.nav-item{
+    float: left;
+    margin-left: 30px;
+    height: 20px;
+    color: #a7a7a7;
+    border-radius: 15px;
+    padding: 3px 15px;
+    line-height: 20px;
+    font-size: 14px;
+}
+.content-display{
+    width: 1000px;
+    margin: 60px auto 0 auto;
+}
+.content-title{
+    font-size: 26px;
+    color: #000;
+    margin-left: 10px;
+}
+.content-des{
+    color: #a7a7a7;
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.item-content{
+    margin-top: 30px;
+}
+
+.weiye{
+    width: 480px;
+    //border-radius: 20px;
+    float: left;
+}
+.general-header{
+    background-color: #ffffff;
+    height: 170px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+.general--header-one{
+    margin: auto;
+}
+.general-header-logo{
+    margin-top: 30px;
+    margin-left: 25px;
+}
+.general-title{
+    font-size: 18px;
+    color: black;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.general-header-btn{
+    margin-top: 35px;
+    margin-right: 30px;
+}
+.general-header-one li{
+    float: left;
+    margin-left: 30px;
+    border: 1px solid #d0d0d0;
+    font-size: 12px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 5px 20px;
+    color: black;
+}
+.general-header-two{
+    margin:30px 0 0 25px;
+}
+.general-des{
+    font-size: 14px;
+    color: #d3d3d3;
+}
+.weiye-content{
+    height: 260px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    position: relative;
+    background-image: linear-gradient(to bottom,#d5d6db,#afaeb3);
+    overflow: hidden;
+}
+.weiye-content-img{
+    position: absolute;
+    margin-top: 30px;
+    margin-left: 35px;
+}
+.weiye-content-shadow{
+    background-color: #b5b4b6;
+    width: 450px;
+    height: 220px;
+    position: absolute;
+    top: 45px;
+    left: 30px;
+    border-top-left-radius: 30px;
+    box-shadow:0px 0px 15px 10px #b5b4b6;
+}
+.weizhan{
+    width: 480px;
+    float: right;
+}
+.weizhan-content{
+    height: 260px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    background-image: linear-gradient(to bottom,#fff0c5,#ffbea9);
+}
+.fan-interaction{
+    width: 1000px;
+    margin: 105px auto 0 auto;
+}
+.minitest-content{
+    height: 360px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+    overflow: hidden;
+}
+
+
+
