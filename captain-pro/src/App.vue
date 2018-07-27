@@ -61,6 +61,7 @@
 
 <script>
 import Siderbar from './components/siderbar'
+import { mapState } from 'vuex'
 
 export default {
   data () {
@@ -73,22 +74,21 @@ export default {
       }
     }
   },
-  computed: {
-    // ...mapState({
-    //   show: state => state.show,
-    //   titleMsg: state => state.titleMsg,
-    //   itemsList: state => state.itemsList
-    // })
-    show () {
-      return this.$store.state.show
-    },
-    titleMsg () {
-      return this.$store.state.titleMsg
-    },
-    itemsList () {
-      return this.$store.state.items
-    }
-  },
+  computed: mapState({
+      show: state => state.show,
+      titleMsg: state => state.titleMsg,
+      itemsList: state => state.items
+  }),
+  //   show () {
+  //     return this.$store.state.show
+  //   },
+  //   titleMsg () {
+  //     return this.$store.state.titleMsg
+  //   },
+  //   itemsList () {
+  //     return this.$store.state.items
+  //   }
+  // },
   components: {
     Siderbar
   },
