@@ -29,7 +29,6 @@
         </tr>
       </table>
       <Siderbar>
-        <template slot="header"></template>
         <div slot="body">
           <div class="slide-panel-body">
             <div class="slide-panel-body-content">
@@ -53,7 +52,6 @@
             </div>
           </div>
         </div>
-        <template slot="footer"></template>
       </Siderbar>
     </div>
   </div>

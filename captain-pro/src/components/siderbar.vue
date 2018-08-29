@@ -1,21 +1,17 @@
 <template>
   <transition name="slide-fade">
     <div v-if="this.$store.state.show" class="slide-panel">
-      <slot name="header">
-        <div class="slide-panel-header">
-          <h3 class="slide-panel-header-title" v-if="this.$store.state.isAdd">添加商品</h3>
-          <h3 class="slide-panel-header-title" v-else>编辑商品</h3>
-          <a class="slide-panel-header-close" @click="onShow"></a>
-        </div>
-      </slot>
+      <div class="slide-panel-header">
+        <h3 class="slide-panel-header-title" v-if="this.$store.state.isAdd">添加商品</h3>
+        <h3 class="slide-panel-header-title" v-else>编辑商品</h3>
+        <a class="slide-panel-header-close" @click="onShow"></a>
+      </div>
       <slot name="body"></slot>
-      <slot name="footer">
-        <div class="slide-panel-footer">
-          <button class="slide-panel-footer-define" v-if="this.$store.state.isAdd" @click="onclickAdd()">确定添加</button>
-          <button class="slide-panel-footer-define" v-else @click="onclickEdit()">确定编辑</button>
-          <button class="slide-panel-footer-close" @click="onShow">取消</button>
-        </div>
-      </slot>
+      <div class="slide-panel-footer">
+        <button class="slide-panel-footer-define" v-if="this.$store.state.isAdd" @click="onclickAdd()">确定添加</button>
+        <button class="slide-panel-footer-define" v-else @click="onclickEdit()">确定编辑</button>
+        <button class="slide-panel-footer-close" @click="onShow">取消</button>
+      </div>
     </div>
   </transition>
 </template>
