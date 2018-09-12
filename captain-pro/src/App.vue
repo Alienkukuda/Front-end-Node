@@ -73,9 +73,9 @@ export default {
     }
   },
   computed: mapState({
-      show: state => state.show,
-      titleMsg: state => state.titleMsg,
-      itemsList: state => state.items
+    show: state => state.show,
+    titleMsg: state => state.titleMsg,
+    itemsList: state => state.items
   }),
   //   show () {
   //     return this.$store.state.show
