@@ -63,7 +63,7 @@ ul li {
 
 效果图：
 
-![image-20180913224858699](/var/folders/bc/98l_bzpx6kx6kx8v7nh1v0jw0000gn/T/abnerworks.Typora/image-20180913224858699.png)
+![image-20180913224858699](image/image-20180913224858699.png)
 
 简单地解释一下，由于`relative`定义的元素不会脱离文档流，就算设置了`left`等值，它依然占着位置，`li`标签中第三块元素也就会按正常顺序由上而下排列，并不会被第二块元素所覆盖，而被设置为`absolute`和`fixed`的块状元素就会凌驾于第三块元素之上。这里我们可以猜出，`absolute`的一个妙用，它可以实现一个类似弹窗的功能，这里就不再举例。
 
@@ -123,11 +123,11 @@ ul:after {
 
 效果图：
 
-![image-20180917203313885](/Users/dripower/Library/Application Support/typora-user-images/image-20180917203313885.png)
+![image-20180917203313885](image/image-20180917203313885.png)
 
 现在只设置`margin-left: 10px`，就会出现以下结果：
 
-![image-20180914000708198](/var/folders/bc/98l_bzpx6kx6kx8v7nh1v0jw0000gn/T/abnerworks.Typora/image-20180914000708198.png)
+![image-20180914000708198](image/image-20180914000708198.png)
 
 ### 2.z-index
 
@@ -137,7 +137,7 @@ ul:after {
 
 所谓同级，顾名思义，也就是同级间层级的比较，一个元素`position`不为`static`后，如果不给它的`z-index`设定值，默认为0，由下图可以看到，A 元素设定了`z-index`为0，B元素未设定，E 元素设定了`z-index`为负数，按照顺序 B 覆盖住了 A，而E则被A盖住。往后则是`z-index`大的把小的覆盖。
 
-![image-20180917213219642](/Users/dripower/Library/Application Support/typora-user-images/image-20180917213219642.png)
+![image-20180917213219642](image/image-20180917213219642.png)
 
 在此仅展示结构，css 代码则省去。
 
@@ -165,9 +165,9 @@ ul:after {
 
 效果图：
 
-![image-20180917214330725](/Users/dripower/Library/Application Support/typora-user-images/image-20180917214330725.png)
+![image-20180917214330725](image/image-20180917214330725.png)
 
-可见，A、B父元素的层级影响了相应的子元素的层级，就算 B 的`z-index`设的再大，它的父元素的`z-index`总是小于 A 的父元素的`z-index`值，这时候不论 A 的`z-index`怎么变化，元素 A 就会像图中一样一直压着 B，这就是从父原则。不过这里要划一下重点，这里的父元素不一定要同级，换句话说，两个元素间的层级比较，是相应的的同级祖先元素各自往下找到第一个`position`不为`static`的的两个元素之间的比较。
+可见，A、B父元素的层级影响了相应的子元素的层级，就算 B 的`z-index`设的再大，它的父元素的`z-index`总是小于 A 的父元素的`z-index`值，这时候不论 A 的`z-index`怎么变化，元素 A 就会像图中一样一直压着 B，这就是从父原则。不过这里要划一下重点，这里的父元素不一定要同级，换句话说，两个元素间的层级比较，是**相应的的同级祖先元素各自往下找到第一个`position`不为`static`的的两个元素之间的比较**。
 
 举个栗子：
 
