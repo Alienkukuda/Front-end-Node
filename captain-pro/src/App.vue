@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <router-view></router-view>
     <div class="view-wrap">
       <div class="sale-headline fn-clear">
         <div class="headline-title">
