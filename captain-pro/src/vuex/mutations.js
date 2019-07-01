@@ -1,6 +1,7 @@
 export default {
   onclickShow (state) {
     state.show = !state.show
+    state.isAdd = false
   },
   onclickShowAdd (state) {
     state.show = !state.show
@@ -8,7 +9,6 @@ export default {
   },
   onclickShowEdit (state) {
     state.show = !state.show
-    state.isAdd = !state.isAdd
   },
   changeTitleMsg (state, str) {
     state.titleMsg = str
@@ -17,7 +17,7 @@ export default {
     state.items.splice(payload, 1)
   },
   addItem (state, payload) {
-    console.log(state)
+    console.log(payload)
     state.items.push({name: payload.name, price: payload.price, amount: payload.amount, sale: 0})
     state.show = !state.show
   },

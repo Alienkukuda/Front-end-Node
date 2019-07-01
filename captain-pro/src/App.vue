@@ -1,6 +1,5 @@
 <template>
   <div id="app">
-    <router-view></router-view>
     <div class="view-wrap">
       <div class="sale-headline fn-clear">
         <div class="headline-title">
@@ -18,7 +17,7 @@
           <th>销售</th>
           <th>操作</th>
         </tr>
-        <tr v-for="(item,key) in itemsList" :key="key">
+        <tr v-for="(item,key) in itemsList" v-bind:key="key">
           <td >{{item.name}}</td>
           <td >{{item.price}}</td>
           <td >{{item.amount}}</td>
@@ -52,6 +51,11 @@
               </p>
             </div>
           </div>
+          <div class="slide-panel-footer">
+          <button class="slide-panel-footer-define" v-if="this.$store.state.isAdd" @click="onclickAdd()">确定添加</button>
+          <button class="slide-panel-footer-define" v-else @click="onclickEdit()">确定编辑</button>
+          <button class="slide-panel-footer-close" @click="onShow">取消</button>
+      </div>
         </div>
       </Siderbar>
     </div>

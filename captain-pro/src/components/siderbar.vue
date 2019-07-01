@@ -7,11 +7,6 @@
         <a class="slide-panel-header-close" @click="onShow"></a>
       </div>
       <slot name="body"></slot>
-      <div class="slide-panel-footer">
-        <button class="slide-panel-footer-define" v-if="this.$store.state.isAdd" @click="onclickAdd()">确定添加</button>
-        <button class="slide-panel-footer-define" v-else @click="onclickEdit()">确定编辑</button>
-        <button class="slide-panel-footer-close" @click="onShow">取消</button>
-      </div>
     </div>
   </transition>
 </template>

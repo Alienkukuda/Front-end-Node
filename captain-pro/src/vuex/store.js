@@ -12,7 +12,7 @@ const state = {
   items: [{
     name: 'captain1',
     price: 20,
-    amount: 10,
+    amount: 8,
     sale: 0
   },
   {
@@ -29,9 +29,8 @@ const state = {
   }
   ]
 }
-const store = new Vuex.Store({
+export default new Vuex.Store({
   state,
   mutations,
   actions
 })
-export default store
